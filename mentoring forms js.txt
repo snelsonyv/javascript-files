@@ -1,0 +1,47 @@
+(function(){
+
+window.addEventListener('load', function(){
+
+var sourceControlId = 63083141, /** THE ID OF THE SENDER CONTROL */
+
+targetControlId = 63114409, /** THE ID OF THE RECEIVER CONTROL **/
+
+sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId),
+
+targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
+
+sourceControlInstance.on('value-change', function(){
+
+targetControlInstance.setValue( sourceControlInstance.getValue() );
+
+});
+
+targetControlInstance.setValue( sourceControlInstance.getValue() );
+
+});
+
+})();
+
+(function(){
+
+window.addEventListener('load', function(){
+
+var sourceControlId = 63083039, /** THE ID OF THE SENDER CONTROL */
+
+targetControlId = 64187221, /** THE ID OF THE RECEIVER CONTROL **/
+
+sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId),
+
+targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
+
+sourceControlInstance.on('value-change', function(){
+
+targetControlInstance.setValue( sourceControlInstance.getValue() );
+
+});
+
+targetControlInstance.setValue( sourceControlInstance.getValue() );
+
+});
+
+})();
