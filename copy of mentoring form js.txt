@@ -1,4 +1,4 @@
-(function(){
+function(){
 
 window.addEventListener('load', function(){
 
@@ -22,7 +22,7 @@ targetControlInstance.setValue( sourceControlInstance.getValue() );
 
 })();
 
-(function(){
+function(){
 
 window.addEventListener('load', function(){
 
